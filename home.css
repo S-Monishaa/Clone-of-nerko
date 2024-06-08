@@ -1,0 +1,129 @@
+.nav-bar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px;
+    height: 3cm;
+}
+
+.nav-bar h1{
+    margin-right: 20px;
+    padding: 0cm 3.5cm;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.nav-bar ul{
+    display: flex;
+    padding-right: 10cm;
+}
+
+.nav-bar li{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-bar li:hover{
+    color: blue;
+    cursor:pointer;
+}
+
+.nav-bar button{
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.nav-bar button:hover{
+    background: linear-gradient(to right, #33ccff 0%, #d25aea 100%);
+    color: aliceblue;
+}
+
+.coin-image img{
+   margin-left: 26%; 
+   width: 1cm;
+   height: 1cm;
+}
+
+/* ------------------------ */
+
+.Container{
+    display: flex;
+    align-items: center;
+    padding: 2cm 4cm;
+    background-image: url("https://nerko-gatsbyjs.vercel.app/assets/img/objects/bitcoin-01.png"), url("https://nerko-gatsbyjs.vercel.app/assets/img/others/blob-dashed.svg"), url(https://nerko-gatsbyjs.vercel.app/assets/img/objects/x.png);
+    background-repeat: no-repeat;
+    background-size: 1cm, 6cm, 0.8cm;
+    background-position: 46% 70%, 83.5% 15%, 80% 14%;
+
+    
+}
+
+.Content-left{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    
+}
+
+.Content-left h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.Content-left h3{
+    font-weight: 100;
+}
+
+.Content-left button{
+    padding: 10px 20px;
+    background: linear-gradient(to right, #33ccff 0%, #d25aea 100%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Image-right{
+    padding-left: 5cm;
+    display: flex;
+    position: relative;
+}
+
+.Image-right .image1 img,
+.Image-right .image2 img {
+    width: 6.5cm;
+    height: 9cm;
+    border-radius: 20px;
+}
+
+.Image-right .image1{
+    position: relative;
+    background-image: url("https://nerko-gatsbyjs.vercel.app/assets/img/others/blob-dashed-light.svg");
+    z-index: 1;
+    
+ 
+}
+
+.Image-right .image2{
+    position: absolute;
+    top: calc(2cm - 20px);
+    left: calc(12.5cm - 20px);
+    
+}
+
+.Image-background{
+    height:420px;
+    width:300px;
+    background-color: #fddfff;
+    border-radius: 50px;
+    display: inline-block;
+    transform: rotate(50deg);
+    z-index: 0;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -0%) rotate(75deg); 
+}
+
